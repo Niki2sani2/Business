@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
             margin: 0;
@@ -16,10 +14,9 @@
             color: white;
         }
 
-        /* HERO MOBILE OPTIMIERT */
         header {
             text-align: center;
-            padding: 50px 15px 25px;
+            padding: 55px 15px 25px;
         }
 
         .logo {
@@ -29,28 +26,32 @@
 
         h1 {
             font-size: 30px;
-            margin: 5px 0;
             letter-spacing: 2px;
+            margin: 5px 0;
         }
 
         .sub {
             font-size: 13px;
-            opacity: 0.6;
+            opacity: 0.65;
             max-width: 90%;
             margin: auto;
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
-        /* TRUST BAR */
-        .trust {
-            font-size: 12px;
-            opacity: 0.45;
+        /* STATUS / BRAND LINE */
+        .status {
             text-align: center;
-            padding: 10px 15px;
+            font-size: 12px;
+            opacity: 0.55;
+            padding: 10px 20px;
             line-height: 1.6;
         }
 
-        /* SECTION */
+        .highlight {
+            opacity: 0.9;
+            font-weight: bold;
+        }
+
         section {
             padding: 40px 15px;
             text-align: center;
@@ -61,19 +62,17 @@
             margin-bottom: 15px;
         }
 
-        /* PRODUCT CARD MOBILE FIRST */
         .card {
             width: 92%;
             max-width: 320px;
             margin: 12px auto;
-            padding: 12px;
+            padding: 14px;
             border-radius: 16px;
 
             background: rgba(255,255,255,0.04);
             border: 1px solid rgba(255,255,255,0.08);
 
             box-shadow: 0 10px 35px rgba(0,0,0,0.6);
-            backdrop-filter: blur(10px);
         }
 
         img {
@@ -92,7 +91,6 @@
             margin-top: 4px;
         }
 
-        /* BUTTON (FAT FINGER OPTIMIERT) */
         button {
             margin-top: 10px;
             width: 100%;
@@ -102,15 +100,7 @@
             font-weight: bold;
             font-size: 14px;
             cursor: pointer;
-
             background: linear-gradient(90deg, #00c2ff, #8cff00, #ffd000, #ff3c3c);
-        }
-
-        /* SECTION LABELS SMALL */
-        .label {
-            font-size: 11px;
-            opacity: 0.4;
-            margin-bottom: 10px;
         }
 
         footer {
@@ -124,69 +114,67 @@
 
 <body>
 
-<!-- HERO -->
 <header>
     <img src="3D-Logo.png" class="logo">
     <h1>Nouikat-3D</h1>
 
     <div class="sub">
-        Minimalistische 3D Prints & Custom Designs.<br>
-        Keine Massenware – jedes Stück bewusst gebaut.
+        Minimalistische 3D Designs & Custom Prints.<br>
+        Fokus auf Design, nicht Masseproduktion.
     </div>
 </header>
 
-<!-- TRUST -->
-<div class="trust">
-    Handmade • Kleine Stückzahlen • Fokus auf Design • Direkt kaufbar über Willhaben
+<!-- STATUS TEXT (WICHTIG FÜR TRUST) -->
+<div class="status">
+    <span class="highlight">Offizieller Verkaufsprozess:</span><br>
+    Unsere Produkte werden aktuell über <b>Willhaben</b> abgewickelt,<br>
+    während wir unsere eigene Plattform im Hintergrund aufbauen.
 </div>
 
 <!-- DEKO -->
 <section>
-    <div class="label">DEKO</div>
     <h2>Deko Figuren</h2>
 
     <div class="card">
         <img src="3D-1.jpg">
         <div class="title">Mini Model</div>
-        <div class="desc">Clean Design für Setup oder Raum</div>
+        <div class="desc">Clean Design Objekt für Raum & Setup</div>
         <button onclick="window.open('https://www.willhaben.at/DEIN-LINK')">
-            Jetzt kaufen
+            Produkt ansehen
         </button>
     </div>
 
     <div class="card">
         <img src="3D-3.jpg">
         <div class="title">Car Sculpture</div>
-        <div class="desc">Abstraktes Design Objekt</div>
+        <div class="desc">Abstrakte Designfigur</div>
         <button onclick="window.open('https://www.willhaben.at/DEIN-LINK')">
-            Jetzt kaufen
+            Produkt ansehen
         </button>
     </div>
 </section>
 
 <!-- AUTO -->
 <section>
-    <div class="label">AUTO & MOTO</div>
-    <h2>Zubehör</h2>
+    <h2>Auto & Moto</h2>
 
     <div class="card">
         <img src="3D-2.jpg">
-        <div class="title">Car Interior Gadget</div>
-        <div class="desc">Minimal Upgrade für dein Auto</div>
+        <div class="title">Interior Gadget</div>
+        <div class="desc">Minimal Upgrade für dein Fahrzeug</div>
         <button onclick="window.open('https://www.willhaben.at/DEIN-LINK')">
-            Jetzt ansehen
+            Produkt ansehen
         </button>
     </div>
 </section>
 
 <!-- CUSTOM -->
 <section>
-    <div class="label">CUSTOM</div>
-    <h2>3D Druck auf Anfrage</h2>
+    <h2>Custom 3D Druck</h2>
 
     <div class="card">
-        <div class="title">Dein eigenes Projekt</div>
-        <div class="desc">Ich baue deine Idee als 3D Objekt</div>
+        <div class="title">Individuelle Projekte</div>
+        <div class="desc">Von Idee bis fertiges Objekt</div>
         <button onclick="window.open('https://www.willhaben.at/DEIN-LINK')">
             Anfrage starten
         </button>
