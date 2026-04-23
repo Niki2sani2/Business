@@ -9,7 +9,7 @@
         body {
             margin: 0;
             font-family: Arial;
-            background: radial-gradient(circle at top, #1a1a1a, #000000);
+            background: #0a0a0a;
             color: white;
             text-align: center;
         }
@@ -17,6 +17,12 @@
         header {
             padding: 40px 20px;
             position: relative;
+        }
+
+        /* Logo */
+        .logo {
+            width: 120px;
+            margin-bottom: 10px;
         }
 
         h1 {
@@ -30,7 +36,16 @@
             margin-top: 10px;
         }
 
-        /* Glow Effekt */
+        /* Polaroid Style Linie */
+        .color-line {
+            width: 120px;
+            height: 4px;
+            margin: 15px auto;
+            border-radius: 5px;
+            background: linear-gradient(90deg, #00c2ff, #8cff00, #ffd000, #ff3c3c);
+        }
+
+        /* Glow Effekt passend zum Logo */
         .glow {
             position: absolute;
             top: -120px;
@@ -38,8 +53,8 @@
             transform: translateX(-50%);
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(255,0,0,0.3), transparent);
-            filter: blur(100px);
+            background: radial-gradient(circle, rgba(255,0,0,0.2), transparent);
+            filter: blur(120px);
             z-index: -1;
         }
 
@@ -82,6 +97,7 @@
             font-size: 14px;
         }
 
+        /* Button mit Logo Farben */
         button {
             margin-top: 10px;
             padding: 12px;
@@ -89,9 +105,9 @@
             border: none;
             border-radius: 10px;
 
-            background: linear-gradient(45deg, #ff0000, #ff4d4d);
-            color: white;
-            font-size: 16px;
+            background: linear-gradient(90deg, #00c2ff, #8cff00, #ffd000, #ff3c3c);
+            color: black;
+            font-weight: bold;
 
             cursor: pointer;
             transition: 0.3s;
@@ -114,15 +130,25 @@
 
     <header>
         <div class="glow"></div>
+
+        <img src="3D-Logo.png" class="logo">
+
         <h1>Nouikat-3D</h1>
+
+        <div class="color-line"></div>
+
         <div class="subtitle">3D-gedruckte Designs – minimal & einzigartig</div>
+
+        <p style="opacity:0.5; font-size:12px;">
+            Handmade • 3D Printed • Limited Pieces
+        </p>
     </header>
 
     <div class="container">
 
         <!-- PRODUKT 1 -->
         <div class="product">
-            <img src="images/3D-1.jpg">
+            <img src="3D-1.jpg">
             <h2>Mini Car Model</h2>
             <p>Minimalistisches 3D Modell – perfekt für dein Setup.</p>
             <button onclick="window.open('https://www.willhaben.at/DEIN-LINK')">
@@ -132,7 +158,7 @@
 
         <!-- PRODUKT 2 -->
         <div class="product">
-            <img src="images/3D-2.jpg">
+            <img src="3D-2.jpg">
             <h2>Desk Gadget</h2>
             <p>Sauberes Design für deinen Schreibtisch.</p>
             <button onclick="window.open('https://www.willhaben.at/DEIN-LINK')">
@@ -142,7 +168,7 @@
 
         <!-- PRODUKT 3 -->
         <div class="product">
-            <img src="images/3D-3.jpg">
+            <img src="3D-3.jpg">
             <h2>Custom Print</h2>
             <p>Individuell gedruckt – auf Anfrage möglich.</p>
             <button onclick="window.open('https://www.willhaben.at/DEIN-LINK')">
